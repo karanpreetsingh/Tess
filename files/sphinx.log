@@ -1,0 +1,2922 @@
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				mr house
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 32.71  1.98 -4.95 -0.90 -7.05  3.18 -4.11 -6.25  5.63  5.50 -0.96  5.53  0.40 >
+INFO: kws_search.c(656): kws 0.42 CPU 0.121 xRT
+INFO: kws_search.c(658): kws 7.22 wall 2.069 xRT
+INFO: kws_search.c(448): TOTAL kws 0.42 CPU 0.122 xRT
+INFO: kws_search.c(451): TOTAL kws 7.22 wall 2.075 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: kws_search.c(656): kws 0.14 CPU 0.098 xRT
+INFO: kws_search.c(658): kws 0.93 wall 0.652 xRT
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 33.10 -2.90 -4.90 -3.61 -6.44  4.12 -11.92 -0.12  7.79  5.80  0.36 -0.12  5.05 >
+INFO: kws_search.c(656): kws 0.21 CPU 0.121 xRT
+INFO: kws_search.c(658): kws 3.20 wall 1.828 xRT
+INFO: cmn_live.c(120): Update from < 33.10 -2.90 -4.90 -3.61 -6.44  4.12 -11.92 -0.12  7.79  5.80  0.36 -0.12  5.05 >
+INFO: cmn_live.c(138): Update to   < 33.82 -3.12 -4.03 -3.59 -6.61  4.14 -13.07 -0.00  8.17  6.27  1.29 -0.53  5.68 >
+INFO: kws_search.c(656): kws 0.10 CPU 0.137 xRT
+INFO: kws_search.c(658): kws 2.10 wall 2.871 xRT
+INFO: cmn_live.c(120): Update from < 33.82 -3.12 -4.03 -3.59 -6.61  4.14 -13.07 -0.00  8.17  6.27  1.29 -0.53  5.68 >
+INFO: cmn_live.c(138): Update to   < 33.24 -0.54 -3.57  0.60 -5.82  1.98 -12.20 -2.27  7.91  8.24  3.24  1.67  4.57 >
+INFO: kws_search.c(656): kws 0.42 CPU 0.121 xRT
+INFO: kws_search.c(658): kws 5.91 wall 1.714 xRT
+INFO: cmn_live.c(88): Update from < 33.24 -0.54 -3.57  0.60 -5.82  1.98 -12.20 -2.27  7.91  8.24  3.24  1.67  4.57 >
+INFO: cmn_live.c(105): Update to   < 33.43 -1.45 -3.06  0.56 -6.02  2.22 -12.75 -1.82  7.96  8.18  3.43  1.72  4.91 >
+INFO: cmn_live.c(120): Update from < 33.43 -1.45 -3.06  0.56 -6.02  2.22 -12.75 -1.82  7.96  8.18  3.43  1.72  4.91 >
+INFO: cmn_live.c(138): Update to   < 33.06 -1.78 -2.93  0.13 -5.98  2.59 -12.31 -1.79  7.81  8.18  3.36  1.77  4.73 >
+INFO: kws_search.c(656): kws 0.13 CPU 0.142 xRT
+INFO: kws_search.c(658): kws 3.81 wall 4.237 xRT
+INFO: cmn_live.c(120): Update from < 33.06 -1.78 -2.93  0.13 -5.98  2.59 -12.31 -1.79  7.81  8.18  3.36  1.77  4.73 >
+INFO: cmn_live.c(138): Update to   < 33.12 -2.25 -2.60  0.37 -6.59  3.05 -12.35 -1.76  8.17  8.56  4.25  1.97  4.83 >
+INFO: kws_search.c(656): kws 0.11 CPU 0.132 xRT
+INFO: kws_search.c(658): kws 2.64 wall 3.217 xRT
+INFO: cmn_live.c(120): Update from < 33.12 -2.25 -2.60  0.37 -6.59  3.05 -12.35 -1.76  8.17  8.56  4.25  1.97  4.83 >
+INFO: cmn_live.c(138): Update to   < 33.52 -2.39 -2.33  0.97 -6.18  2.80 -13.57 -1.80  7.93  8.27  3.76  1.75  5.38 >
+INFO: kws_search.c(656): kws 0.09 CPU 0.139 xRT
+INFO: kws_search.c(658): kws 3.18 wall 4.817 xRT
+INFO: cmn_live.c(88): Update from < 33.52 -2.39 -2.33  0.97 -6.18  2.80 -13.57 -1.80  7.93  8.27  3.76  1.75  5.38 >
+INFO: cmn_live.c(105): Update to   < 32.99 -1.03 -2.51  0.96 -5.50  2.74 -12.03 -1.94  6.63  7.90  3.46  2.30  5.66 >
+INFO: cmn_live.c(120): Update from < 32.99 -1.03 -2.51  0.96 -5.50  2.74 -12.03 -1.94  6.63  7.90  3.46  2.30  5.66 >
+INFO: cmn_live.c(138): Update to   < 33.69 -1.20 -2.91  0.73 -6.26  3.18 -12.61 -1.28  6.75  7.39  3.53  2.08  6.12 >
+INFO: kws_search.c(656): kws 0.29 CPU 0.127 xRT
+INFO: kws_search.c(658): kws 2.82 wall 1.249 xRT
+INFO: cmn_live.c(88): Update from < 33.69 -1.20 -2.91  0.73 -6.26  3.18 -12.61 -1.28  6.75  7.39  3.53  2.08  6.12 >
+INFO: cmn_live.c(105): Update to   < 32.61 -0.82 -3.37  0.96 -4.34  3.55 -9.34 -0.02  6.53  7.54  2.96  2.44  5.69 >
+INFO: cmn_live.c(120): Update from < 32.61 -0.82 -3.37  0.96 -4.34  3.55 -9.34 -0.02  6.53  7.54  2.96  2.44  5.69 >
+INFO: cmn_live.c(138): Update to   < 30.82 -1.98 -0.63  1.93 -3.63  5.13 -7.85  2.04  7.16  6.88  3.10  1.91  5.83 >
+INFO: kws_search.c(656): kws 0.52 CPU 0.123 xRT
+INFO: kws_search.c(658): kws 7.00 wall 1.642 xRT
+INFO: cmn_live.c(88): Update from < 30.82 -1.98 -0.63  1.93 -3.63  5.13 -7.85  2.04  7.16  6.88  3.10  1.91  5.83 >
+INFO: cmn_live.c(105): Update to   < 29.64 -1.95 -1.00  1.48 -3.54  4.98 -6.66  2.34  6.97  6.80  2.61  2.16  5.63 >
+INFO: kws_search.c(448): TOTAL kws 2.01 CPU 0.124 xRT
+INFO: kws_search.c(451): TOTAL kws 31.59 wall 1.954 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 27.87 -5.21 -1.82  1.88 -4.44  2.76 -4.72  0.35  7.82  3.23  3.21  1.64  3.58 >
+INFO: kws_search.c(656): kws 0.21 CPU 0.107 xRT
+INFO: kws_search.c(658): kws 1.41 wall 0.712 xRT
+INFO: kws_search.c(448): TOTAL kws 0.21 CPU 0.108 xRT
+INFO: kws_search.c(451): TOTAL kws 1.41 wall 0.715 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 28.06 -6.45  2.90  7.15 -5.04  2.40 -8.11  3.19  8.78  2.98  4.01  2.16  4.43 >
+INFO: kws_search.c(656): kws 0.29 CPU 0.112 xRT
+INFO: kws_search.c(658): kws 4.59 wall 1.759 xRT
+INFO: kws_search.c(448): TOTAL kws 0.29 CPU 0.112 xRT
+INFO: kws_search.c(451): TOTAL kws 4.59 wall 1.766 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: kws_search.c(448): TOTAL kws 0.00 CPU -nan xRT
+INFO: kws_search.c(451): TOTAL kws 0.00 wall -nan xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: kws_search.c(448): TOTAL kws 0.00 CPU -nan xRT
+INFO: kws_search.c(451): TOTAL kws 0.00 wall -nan xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 29.16 -7.49 -2.41  1.64 -5.02  5.18 -1.88  7.09 11.56  1.70  3.11  5.91  8.44 >
+INFO: kws_search.c(656): kws 0.55 CPU 0.140 xRT
+INFO: kws_search.c(658): kws 9.18 wall 2.335 xRT
+INFO: cmn_live.c(88): Update from < 29.16 -7.49 -2.41  1.64 -5.02  5.18 -1.88  7.09 11.56  1.70  3.11  5.91  8.44 >
+INFO: cmn_live.c(105): Update to   < 29.05 -3.97 -4.97  6.17 -0.83  5.31  0.66  7.05 10.64  1.66  1.46  5.89  5.98 >
+INFO: cmn_live.c(88): Update from < 29.05 -3.97 -4.97  6.17 -0.83  5.31  0.66  7.05 10.64  1.66  1.46  5.89  5.98 >
+INFO: cmn_live.c(105): Update to   < 26.85 -3.16 -3.73  4.31 -0.73  4.95  1.64  7.33  9.29  2.92  0.09  4.50  6.35 >
+INFO: kws_search.c(448): TOTAL kws 0.55 CPU 0.141 xRT
+INFO: kws_search.c(451): TOTAL kws 9.18 wall 2.341 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: kws_search.c(656): kws 0.23 CPU 0.162 xRT
+INFO: kws_search.c(658): kws 3.97 wall 2.775 xRT
+INFO: kws_search.c(448): TOTAL kws 0.23 CPU 0.163 xRT
+INFO: kws_search.c(451): TOTAL kws 3.97 wall 2.795 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 32.85 -7.64  0.52  7.63 -2.47  3.74 -2.56  3.05 12.22  0.18  1.56  5.07  6.54 >
+INFO: kws_search.c(656): kws 0.30 CPU 0.210 xRT
+INFO: kws_search.c(658): kws 7.04 wall 4.993 xRT
+INFO: cmn_live.c(120): Update from < 32.85 -7.64  0.52  7.63 -2.47  3.74 -2.56  3.05 12.22  0.18  1.56  5.07  6.54 >
+INFO: cmn_live.c(138): Update to   < 30.29 -2.70 -3.39  7.55 -2.46  3.77 -4.15  1.12 11.00  0.90 -1.93  7.27  6.78 >
+INFO: kws_search.c(656): kws 0.91 CPU 0.152 xRT
+INFO: kws_search.c(658): kws 32.12 wall 5.361 xRT
+INFO: cmn_live.c(88): Update from < 30.29 -2.70 -3.39  7.55 -2.46  3.77 -4.15  1.12 11.00  0.90 -1.93  7.27  6.78 >
+INFO: cmn_live.c(105): Update to   < 29.96 -3.41 -3.54  7.33 -2.27  4.23 -3.90  1.31 10.93  0.62 -2.04  7.33  6.62 >
+INFO: cmn_live.c(88): Update from < 29.96 -3.41 -3.54  7.33 -2.27  4.23 -3.90  1.31 10.93  0.62 -2.04  7.33  6.62 >
+INFO: cmn_live.c(105): Update to   < 30.64 -0.21 -4.09  8.75 -1.09  5.20 -1.85  2.07 10.51  1.02 -1.01  6.64  5.41 >
+INFO: cmn_live.c(88): Update from < 30.64 -0.21 -4.09  8.75 -1.09  5.20 -1.85  2.07 10.51  1.02 -1.01  6.64  5.41 >
+INFO: cmn_live.c(105): Update to   < 27.28  0.83 -1.80  6.82  0.76  5.61  1.89  4.40  9.16  3.41 -0.54  5.79  3.90 >
+INFO: cmn_live.c(88): Update from < 27.28  0.83 -1.80  6.82  0.76  5.61  1.89  4.40  9.16  3.41 -0.54  5.79  3.90 >
+INFO: cmn_live.c(105): Update to   < 24.58  1.36  0.25  5.60  2.94  6.63  4.60  7.04  8.42  5.21  0.33  5.06  3.04 >
+INFO: cmn_live.c(88): Update from < 24.58  1.36  0.25  5.60  2.94  6.63  4.60  7.04  8.42  5.21  0.33  5.06  3.04 >
+INFO: cmn_live.c(105): Update to   < 22.52  1.11  0.68  3.94  3.20  6.72  5.53  7.88  7.64  6.12  1.00  5.37  3.15 >
+INFO: cmn_live.c(88): Update from < 22.52  1.11  0.68  3.94  3.20  6.72  5.53  7.88  7.64  6.12  1.00  5.37  3.15 >
+INFO: cmn_live.c(105): Update to   < 21.57  0.62  0.61  3.78  3.63  6.39  6.09  8.16  7.40  6.64  1.50  5.49  2.46 >
+INFO: kws_search.c(448): TOTAL kws 1.20 CPU 0.163 xRT
+INFO: kws_search.c(451): TOTAL kws 39.16 wall 5.306 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 27.75 -4.53 -0.74  1.70 -7.00  2.45 -1.15  5.36  8.86  2.07 -3.03  3.79  8.05 >
+INFO: kws_search.c(656): kws 0.57 CPU 0.142 xRT
+INFO: kws_search.c(658): kws 8.82 wall 2.184 xRT
+INFO: cmn_live.c(88): Update from < 27.75 -4.53 -0.74  1.70 -7.00  2.45 -1.15  5.36  8.86  2.07 -3.03  3.79  8.05 >
+INFO: cmn_live.c(105): Update to   < 27.32 -2.84 -2.10  2.96 -3.80  3.79  0.53  5.61  8.43  2.46 -2.23  4.46  6.10 >
+INFO: kws_search.c(448): TOTAL kws 0.57 CPU 0.142 xRT
+INFO: kws_search.c(451): TOTAL kws 8.82 wall 2.189 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 28.93 -9.13  1.05  3.65 -8.50  4.37 -3.04  1.17  4.15  6.87 -0.21  3.34 11.38 >
+INFO: kws_search.c(656): kws 0.26 CPU 0.154 xRT
+INFO: kws_search.c(658): kws 5.90 wall 3.555 xRT
+INFO: cmn_live.c(120): Update from < 28.93 -9.13  1.05  3.65 -8.50  4.37 -3.04  1.17  4.15  6.87 -0.21  3.34 11.38 >
+INFO: cmn_live.c(138): Update to   < 26.36 -3.40 -2.88  4.57 -2.78  5.10  1.02  6.30  6.33  7.08  0.15  1.62  6.55 >
+INFO: kws_search.c(656): kws 0.98 CPU 0.186 xRT
+INFO: kws_search.c(658): kws 38.95 wall 7.364 xRT
+INFO: cmn_live.c(88): Update from < 26.36 -3.40 -2.88  4.57 -2.78  5.10  1.02  6.30  6.33  7.08  0.15  1.62  6.55 >
+INFO: cmn_live.c(105): Update to   < 25.86 -2.13 -1.77  4.96 -1.82  6.17  1.84  6.24  5.80  6.87  0.20  2.01  6.34 >
+INFO: cmn_live.c(88): Update from < 25.86 -2.13 -1.77  4.96 -1.82  6.17  1.84  6.24  5.80  6.87  0.20  2.01  6.34 >
+INFO: cmn_live.c(105): Update to   < 27.67 -0.26 -1.09  7.98 -1.61  6.42  1.38  4.38  3.98  6.02  1.99  2.78  8.17 >
+INFO: cmn_live.c(120): Update from < 27.67 -0.26 -1.09  7.98 -1.61  6.42  1.38  4.38  3.98  6.02  1.99  2.78  8.17 >
+INFO: cmn_live.c(138): Update to   < 28.54 -1.80  0.05  7.95 -2.79  6.32 -0.30  4.11  4.67  6.15  1.50  2.55  9.34 >
+INFO: kws_search.c(656): kws 0.58 CPU 0.118 xRT
+INFO: kws_search.c(658): kws 14.98 wall 3.038 xRT
+INFO: cmn_live.c(88): Update from < 28.54 -1.80  0.05  7.95 -2.79  6.32 -0.30  4.11  4.67  6.15  1.50  2.55  9.34 >
+INFO: cmn_live.c(105): Update to   < 29.03  0.85 -0.50  9.15 -2.91  5.64 -0.56  1.05  3.39  4.99 -1.04  1.92  8.85 >
+INFO: cmn_live.c(120): Update from < 29.03  0.85 -0.50  9.15 -2.91  5.64 -0.56  1.05  3.39  4.99 -1.04  1.92  8.85 >
+INFO: cmn_live.c(138): Update to   < 30.08  0.90 -0.72  9.55 -2.75  6.57 -1.49 -1.31  3.91  6.66  0.15  1.61  9.78 >
+INFO: kws_search.c(656): kws 0.72 CPU 0.144 xRT
+INFO: kws_search.c(658): kws 18.07 wall 3.613 xRT
+INFO: cmn_live.c(88): Update from < 30.08  0.90 -0.72  9.55 -2.75  6.57 -1.49 -1.31  3.91  6.66  0.15  1.61  9.78 >
+INFO: cmn_live.c(105): Update to   < 29.90  0.59 -0.95  9.30 -2.78  6.67 -1.54 -1.41  3.83  6.72  0.03  1.51  9.86 >
+INFO: cmn_live.c(88): Update from < 29.90  0.59 -0.95  9.30 -2.78  6.67 -1.54 -1.41  3.83  6.72  0.03  1.51  9.86 >
+INFO: cmn_live.c(105): Update to   < 29.61  2.29 -1.80 10.00 -5.90  4.36  0.05 -2.41  3.33  5.63 -1.05  0.45  8.98 >
+INFO: kws_search.c(448): TOTAL kws 2.54 CPU 0.151 xRT
+INFO: kws_search.c(451): TOTAL kws 77.90 wall 4.626 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: kws_search.c(656): kws 0.42 CPU 0.272 xRT
+INFO: kws_search.c(658): kws 11.97 wall 7.672 xRT
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 26.42 -1.59 -5.91 -0.52 -3.48  3.49  0.29  2.79  6.60  6.29 -0.06  2.31  4.91 >
+INFO: kws_search.c(656): kws 0.44 CPU 0.094 xRT
+INFO: kws_search.c(658): kws 4.75 wall 1.003 xRT
+INFO: cmn_live.c(88): Update from < 26.42 -1.59 -5.91 -0.52 -3.48  3.49  0.29  2.79  6.60  6.29 -0.06  2.31  4.91 >
+INFO: cmn_live.c(105): Update to   < 26.31 -1.69 -6.23  1.43 -4.80  4.35  0.09  2.29  7.32  4.97 -1.00  2.94  3.14 >
+INFO: cmn_live.c(88): Update from < 26.31 -1.69 -6.23  1.43 -4.80  4.35  0.09  2.29  7.32  4.97 -1.00  2.94  3.14 >
+INFO: cmn_live.c(105): Update to   < 23.23 -1.58 -4.38 -0.29 -4.36  3.89  2.34  5.34  7.07  5.36 -1.80  2.02  2.30 >
+INFO: kws_search.c(448): TOTAL kws 0.87 CPU 0.138 xRT
+INFO: kws_search.c(451): TOTAL kws 16.72 wall 2.663 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: kws_search.c(448): TOTAL kws 0.00 CPU -nan xRT
+INFO: kws_search.c(451): TOTAL kws 0.00 wall -nan xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 33.14 -1.20 -1.20  1.43 -8.83  0.04 -7.44 -0.59  2.13 -6.25 -6.61 -6.41  2.98 >
+INFO: kws_search.c(656): kws 0.36 CPU 0.194 xRT
+INFO: kws_search.c(658): kws 6.01 wall 3.232 xRT
+INFO: kws_search.c(656): kws 0.46 CPU 0.204 xRT
+INFO: kws_search.c(658): kws 14.69 wall 6.499 xRT
+INFO: cmn_live.c(88): Update from < 33.14 -1.20 -1.20  1.43 -8.83  0.04 -7.44 -0.59  2.13 -6.25 -6.61 -6.41  2.98 >
+INFO: cmn_live.c(105): Update to   < 34.24  7.41 -0.94  0.68 -11.40 -3.30 -6.91  1.13  0.83 -2.53 -7.47 -2.53  1.87 >
+INFO: kws_search.c(448): TOTAL kws 0.82 CPU 0.200 xRT
+INFO: kws_search.c(451): TOTAL kws 20.70 wall 5.049 xRT
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from files/sphinx/models/en-us/en-us-ptm/feat.params
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-agc			none		none
+-agcthresh		2.0		2.000000e+00
+-allphone				
+-allphone_ci		no		no
+-alpha			0.97		9.700000e-01
+-ascale			20.0		2.000000e+01
+-aw			1		1
+-backtrace		no		no
+-beam			1e-48		1.000000e-48
+-bestpath		yes		yes
+-bestpathlw		9.5		9.500000e+00
+-ceplen			13		13
+-cmn			live		current
+-cmninit		40,3,-1		40,3,-1
+-compallsen		no		no
+-debug					0
+-dict					files/sphinx/models/en-us/cmudict-en-us.dict
+-dictcase		no		no
+-dither			no		no
+-doublebw		no		no
+-ds			1		1
+-fdict					
+-feat			1s_c_d_dd	1s_c_d_dd
+-featparams				
+-fillprob		1e-8		1.000000e-08
+-frate			100		100
+-fsg					
+-fsgusealtpron		yes		yes
+-fsgusefiller		yes		yes
+-fwdflat		yes		yes
+-fwdflatbeam		1e-64		1.000000e-64
+-fwdflatefwid		4		4
+-fwdflatlw		8.5		8.500000e+00
+-fwdflatsfwin		25		25
+-fwdflatwbeam		7e-29		7.000000e-29
+-fwdtree		yes		yes
+-hmm					files/sphinx/models/en-us/en-us-ptm
+-input_endian		little		little
+-jsgf					
+-keyphrase				tess
+-kws					
+-kws_delay		10		10
+-kws_plp		1e-1		1.000000e-01
+-kws_threshold		1		1.000000e+00
+-latsize		5000		5000
+-lda					
+-ldadim			0		0
+-lifter			0		22
+-lm					
+-lmctl					
+-lmname					
+-logbase		1.0001		1.000100e+00
+-logfn					files/sphinx.log
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-lpbeam			1e-40		1.000000e-40
+-lponlybeam		7e-29		7.000000e-29
+-lw			6.5		6.500000e+00
+-maxhmmpf		30000		30000
+-maxwpf			-1		-1
+-mdef					
+-mean					
+-mfclogdir				
+-min_endfr		0		0
+-mixw					
+-mixwfloor		0.0000001	1.000000e-07
+-mllr					
+-mmap			yes		yes
+-ncep			13		13
+-nfft			512		512
+-nfilt			40		25
+-nwpen			1.0		1.000000e+00
+-pbeam			1e-48		1.000000e-48
+-pip			1.0		1.000000e+00
+-pl_beam		1e-10		1.000000e-10
+-pl_pbeam		1e-10		1.000000e-10
+-pl_pip			1.0		1.000000e+00
+-pl_weight		3.0		3.000000e+00
+-pl_window		5		5
+-rawlogdir				
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-sendump				
+-senlogdir				
+-senmgau				
+-silprob		0.005		5.000000e-03
+-smoothspec		no		no
+-svspec					0-12/13-25/26-38
+-tmat					
+-tmatfloor		0.0001		1.000000e-04
+-topn			4		4
+-topn_beam		0		0
+-toprule				
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-uw			1.0		1.000000e+00
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-var					
+-varfloor		0.0001		1.000000e-04
+-varnorm		no		no
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-wbeam			7e-29		7.000000e-29
+-wip			0.65		6.500000e-01
+-wlen			0.025625	2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(166): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(518): Reading model definition: files/sphinx/models/en-us/en-us-ptm/mdef
+INFO: bin_mdef.c(181): Allocating 142108 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: files/sphinx/models/en-us/en-us-ptm/transition_matrices
+INFO: acmod.c(117): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/means
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: files/sphinx/models/en-us/en-us-ptm/variances
+INFO: ms_gauden.c(242): 42 codebook, 3 feature, size: 
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(244):  128x13
+INFO: ms_gauden.c(304): 222 variance values floored
+INFO: ptm_mgau.c(476): Loading senones from dump file files/sphinx/models/en-us/en-us-ptm/sendump
+INFO: ptm_mgau.c(500): BEGIN FILE FORMAT DESCRIPTION
+INFO: ptm_mgau.c(563): Rows: 128, Columns: 5126
+INFO: ptm_mgau.c(595): Using memory-mapped I/O for senones
+INFO: ptm_mgau.c(838): Maximum top-N: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 138623 * 32 bytes (4331 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: files/sphinx/models/en-us/cmudict-en-us.dict
+INFO: dict.c(213): Dictionary size 134522, allocated 1014 KiB for strings, 1677 KiB for phones
+INFO: dict.c(336): 134522 words read
+INFO: dict.c(358): Reading filler dictionary: files/sphinx/models/en-us/en-us-ptm/noisedict
+INFO: dict.c(213): Dictionary size 134527, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 5 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 42^3 * 2 bytes (144 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 42672 bytes (41 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 42672 bytes (41 KiB) for single-phone word triphones
+INFO: kws_search.c(406): KWS(beam: -1080, plp: -23, default threshold 0, delay 10)
+INFO: cmn_live.c(120): Update from < 40.00  3.00 -1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_live.c(138): Update to   < 35.56  2.24 -1.62 -1.88 -7.39  3.01 -6.47 -4.55  0.81 -3.20 -0.17 -3.81  0.86 >
+INFO: kws_search.c(656): kws 0.35 CPU 0.203 xRT
+INFO: kws_search.c(658): kws 5.20 wall 3.005 xRT
+INFO: kws_search.c(448): TOTAL kws 0.35 CPU 0.205 xRT
+INFO: kws_search.c(451): TOTAL kws 5.20 wall 3.022 xRT
