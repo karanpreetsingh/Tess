@@ -1,3 +1,9 @@
+import pocketsphinx
+import os
+import pyaudio 
+import settings as st
+import speech_recognition as sr
+import nltk
 
 def start_keyphrase_recognition(keyphrase_function, key_phrase):    
     modeldir = "files/sphinx/models"
@@ -27,7 +33,7 @@ def parse(tokens):
     print tokens 
     
 def tokenize():    
-    print(globalName + " is listening..")
+    print(st.globalName + " is listening..")
     r = sr.Recognizer()
     with sr.Microphone() as source:        
         audio = r.listen(source)
